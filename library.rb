@@ -5,7 +5,7 @@ class Library
   end
 
   def books
-    @books = books
+    @books = books 
   end
 
   def list_books
@@ -52,5 +52,6 @@ class Book
   def initialize(title, author)
     @title = title
     @author = author
+    puts "The book #{title} by #{author} has been created."
   end
 end
