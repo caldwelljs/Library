@@ -2,15 +2,13 @@ require_relative "library.rb"
 
 puts "create our library"
 library = Library.new
-puts "Great, your library has now been created!"
-
-# What would you like to do? In the Library, you can do the following things: books
+puts "-------------------------"
 
 puts "create our borrowers"
 mike = Borrower.new("Mike")
 ricardo = Borrower.new("Ricardo")
 gilbert = Borrower.new("Gilbert")
-puts "Mike, Ricardo, and Gilbert have been added to the Library! They're ready to borrow!"
+puts "-------------------------"
 
 puts "create our books"
 stranger = Book.new("The Stranger", "Albert Camus")
@@ -19,7 +17,7 @@ karamazov = Book.new("The Brothers Karamazov", "Fyodor Dostoesvky")
 feynman = Book.new("Surely You're Joking Mr. Feynman", "Richard Feynman")
 finnegan = Book.new("Finnegans Wake", "James Joyce")
 k_and_r = Book.new("The C Programming Language", "Kernighan and Ritchie")
-puts "Your books have been created.  Our shelves are going to be pretty full"
+puts "-------------------------"
 
 puts "add our books to the library"
 library.add_book(stranger)
@@ -29,6 +27,7 @@ library.add_book(feynman)
 library.add_book(finnegan)
 library.add_book(k_and_r)
 puts "Our books have been added to the libary"
+puts "-------------------------"
 
 puts "list all five books in the library's catalog with their status:"
 library.list_books

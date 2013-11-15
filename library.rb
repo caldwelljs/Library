@@ -1,6 +1,7 @@
 class Library
   def initialize
     @books = []
+    puts "Welcome to our brand new library. Feel free to peruse our shelves, grab a coffee, and relax."
   end
 
   def books
@@ -31,6 +32,7 @@ end
 class Borrower
   def initialize(name)
     @name = name
+    puts "Welcome to our Library #{@name}.  Here's your library card." 
   end
 
   def borrowed_books
