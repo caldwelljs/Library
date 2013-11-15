@@ -18,7 +18,7 @@ class Library
   end
 
   def add_book(book)
-    
+    @books << book
   end
 
   def check_out(user, book)
