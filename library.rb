@@ -4,9 +4,11 @@ class Library
   end
 
   def books
+    @books = books
   end
 
   def list_books
+
   end
 
   def borrowed_books
@@ -16,6 +18,7 @@ class Library
   end
 
   def add_book(book)
+    
   end
 
   def check_out(user, book)
@@ -27,6 +30,7 @@ end
 
 class Borrower
   def initialize(name)
+    @name = name
   end
 
   def borrowed_books
@@ -44,5 +48,7 @@ end
 
 class Book
   def initialize(title, author)
+    @title = title
+    @author = author
   end
 end
