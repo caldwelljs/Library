@@ -5,7 +5,6 @@ class Library
   end
 
   def books
-    @books = books 
   end
 
   def list_books
@@ -20,6 +19,7 @@ class Library
 
   def add_book(book)
     @books << book
+    puts "The book #{book.title} has been added to the library."
   end
 
   def check_out(user, book)
@@ -53,5 +53,8 @@ class Book
     @title = title
     @author = author
     puts "The book #{title} by #{author} has been created."
+  end
+  def title
+    @title
   end
 end
