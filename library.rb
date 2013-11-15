@@ -8,7 +8,8 @@ class Library
   end
 
   def list_books
-
+    # @books.title.each do |title|
+    #   puts title
   end
 
   def borrowed_books
@@ -52,9 +53,31 @@ class Book
   def initialize(title, author)
     @title = title
     @author = author
+    @status = "available"
+    @borrower = nil
     puts "The book #{title} by #{author} has been created."
   end
+  
   def title
     @title
+  end
+
+  def author
+    @author
+  end
+
+  def status
+    @status
+  end
+  def status=(new_value)
+    @status = new_value
+  end
+
+  def borrower
+    @borrower
+  end
+
+  def borrower=(new_value)
+    @status = new_value
   end
 end
