@@ -8,8 +8,7 @@ class Library
   end
 
   def list_books
-    # @books.title.each do |title|
-    #   puts title
+    @books.each { |book| puts book.title + " is " + book.status + "."}
   end
 
   def borrowed_books
