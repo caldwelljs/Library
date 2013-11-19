@@ -11,7 +11,7 @@ class Library
 
   def list_books
     @books.each do |book| 
-      if book.checked_out
+      if book.checked_out == true
         puts "#{book.title} is checked out."
       else
         puts "#{book.title} is available."
@@ -31,7 +31,7 @@ class Library
 
   def available_books
     @books.each do |book|
-      if book.checked_out
+      if book.checked_out == false
         puts book.title
       end
     end
@@ -49,7 +49,7 @@ class Library
       puts "Sorry, that user already has two books checked out"
       return
     elsif book.checked_out == false
-      book.checked_out == false
+      book.checked_out = true
       book.borrower = user
       user.books << book
       puts "#{user.name} has checked out the book #{book.title} by #{book.author}."
